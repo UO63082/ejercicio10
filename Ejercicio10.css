@@ -1,0 +1,60 @@
+/* Especificidad: 001 */
+body
+{
+    font-family: Tahoma, sans-serif;
+    background-color:oldlace;
+    /*Resto un poco del 100% para que no me coman los margenes/paddings y salga el scroll lateral*/
+    width: 99%; 
+    height: 100%;
+}
+
+/* Especificidad: 001 */
+table 
+{
+    border: solid black 0.15em;
+    border-collapse: separate;
+    border-spacing: 0.2em 0.2em ;
+}
+
+/* Especificidad: 002 */
+table td,th
+{
+    border: solid grey 0.1em;
+	padding: 0.3em;
+	width: 11em;
+}
+
+/* Especificidad: 002 */
+body header
+{   
+    /* top right bottom left */
+    margin: 0em 0em 0.7em 0em;
+    /*Afecta a todos los lados*/
+    padding: 0.2em;   
+}
+
+/* Especificidad: 002 */
+body footer
+{   
+    /* top right bottom left */
+    padding: 1em 1.5em 1em 0;
+    margin: 3em 0em 1em 0.2em;
+    font-size:medium;
+    border-top: solid grey 0.3em; 
+}
+
+/* Especificidad: 003 */
+body footer> figure
+{   
+    /* top right bottom left */
+    margin: 0.4em 0 0 0;  
+}
+
+/* Especificidad: 004 */
+body footer > figure > img
+{
+    border: 1px solid lightgrey;
+    margin: 0.1em;
+}
+
+
