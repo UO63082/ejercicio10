@@ -1,0 +1,33 @@
+Me gustaria comentar que he buscando por internet diferente web que 
+suministraran API's para la cotizacion del gas natural y me resultado
+bastante complejo ya que muchas de ellas son de pago.
+
+De todas ellas las mas reseñables que encontré serían:
+
+ 1º https://www.eia.gov/opendata/qb.php?category=829727
+ 
+  US Energy Information Administration.
+  Tiene mucha informacion de diferentes temáticas ,entre ellas el gas natural,
+  pero lo que tiene son series historicas de precios de mercado residencial, 
+  industrial etc.No tiene, o no he encontrado información sobre la cotización del dia.
+  
+  Ejp:http://api.eia.gov/series/?api_key=YOUR_API_KEY_HERE&series_id=STEO.NGHHUUS.A (NGHHUUS==Natural gas henry hub united states)
+  Ni forma de extraer el ultimo valor de la serie  
+ 
+ 2º https://desarrolladores.energiaabierta.cl/4/indicadores-diarios
+  
+  Donde eligen la cotizacion que quieres de la materia prima, en este caso henryhub como referencia
+  del precio, similar al brent de pretroleo, pero la API que tiene es una versión beta y para algunos parametros 
+  de filtrado no funcionan.He logrado obtener el precio último de mercado acciendo siempre a la pagina
+  final, y eligiendo los dos primeros valores que siempre es el valor ultimo de cotización.Se que no es
+  la mejor forma evidentemente.
+
+  Finalmente me decanté por https://tradingeconomics.com/
+  
+  La última website que consulté en profundidad y que me facilito el profesor Jaime solis, 
+  permite una suscripcion gratuita donde facilitan una api_key , un modo guest:guest pero 
+  el problema es restrinje los datos en JSON a algunos mercados o paises pero si permite sacar
+  el precio de las ultimos diez dias de cotizacion del gas natural.
+  
+ 
+  
